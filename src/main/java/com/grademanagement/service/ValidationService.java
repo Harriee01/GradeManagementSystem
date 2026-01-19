@@ -445,4 +445,8 @@ public class ValidationService {
 
         return report.toString();
     }
+
+    public Object getLetterGrade(double v) {
+        return null;
+    }
 }

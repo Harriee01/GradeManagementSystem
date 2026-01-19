@@ -48,6 +48,9 @@ public class Grade implements Comparable<Grade> {
         this.letterGrade = GradeLetter.fromPercentage(score); // Get letter grade
     }
 
+
+
+
     // Calculate GPA from percentage score (4.0 scale)
     private double calculateGPA() {
         return letterGrade.getGpaValue();

@@ -28,19 +28,19 @@ public class Main {
         taskScheduler.scheduleDailyGPACalculation();
 
         // Initialize application
-//        ManagementSystemIII app = new AdvancedGradeManagementSystem(
-//                studentService,
-//                gradeService,
-//                statisticsService,
-//                fileService,
-//                cacheService,
-//                taskScheduler,
-//                performanceMonitor,
-//                validationService,
-//                auditRepository
-//        );
-//
-//        app.run();
+        AdvancedGradeManagementSystem app = new AdvancedGradeManagementSystem(
+               studentService,
+               gradeService,
+               statisticsService,
+            fileService,
+              cacheService,
+               taskScheduler,
+               performanceMonitor,
+                validationService,
+               auditRepository
+       );
+
+        app.run();
 
         // Shutdown services
         taskScheduler.shutdown();
