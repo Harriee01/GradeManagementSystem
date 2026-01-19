@@ -149,6 +149,14 @@ public class Grade implements Comparable<Grade> {
                 isPassing() ? "PASS" : "FAIL");
     }
 
+    public boolean isPassing() {
+//        double average = calculateAverageGrade();
+//        double passingGrade = getPassingGrade(); // Implement this in subclasses or define default
+
+        return true;
+    }
+    }
+
 //    @Override
 //    public boolean equals(Object obj) {
 //        if (this == obj) return true;
@@ -166,4 +174,4 @@ public class Grade implements Comparable<Grade> {
 //        result = 31 * result + date.hashCode();
 //        return result;
 //    }
-}
+
