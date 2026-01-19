@@ -227,6 +227,12 @@ public abstract class Student implements Identifiable<String>, StudentType, Cach
     // Abstract method - must be implemented by child classes
     public abstract String getStudentType();
 
+    // POLYMORPHISM: Implementation of interface method
+    public abstract double getPassingGrade();
+
+    // POLYMORPHISM: Implementation of interface method
+    public abstract boolean isEligibleForHonors(double averageGrade);
+
     // Display student information
     @Override
     public String toString() {
