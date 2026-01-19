@@ -1,4 +1,12 @@
 package com.grademanagement.exceptions;
 
-public class FileImportException {
+// Custom exception for file import errors
+public class FileImportException extends Exception {
+    public FileImportException(String message) {
+        super(message);
+    }
+
+    public FileImportException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }
