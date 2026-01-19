@@ -18,6 +18,10 @@ public enum FileFormat {
         return extension;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
     public static FileFormat fromExtension(String ext) {
         for (FileFormat format : values()) {
             if (format.extension.equalsIgnoreCase(ext)) {
@@ -25,5 +29,15 @@ public enum FileFormat {
             }
         }
         throw new IllegalArgumentException("Unsupported format: " + ext);
+    }
+
+    // Returns the FileFormat based on the user's menu selection.
+    public static FileFormat fromChoice(int choice) {
+        return switch (choice) {
+            case 1 -> CSV;
+            case 2 -> JSON;
+            case 3 -> BINARY;
+            default -> throw new IllegalArgumentException("Invalid choice: " + choice);
+        };
     }
 }
