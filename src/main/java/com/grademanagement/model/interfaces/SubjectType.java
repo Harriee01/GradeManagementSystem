@@ -9,4 +9,7 @@ public interface SubjectType {
 
     // Set or update the subject code
     void setCode(String code);
+
+    String getSubjectType();   // e.g., "Core", "Elective"
+    boolean isMandatory();     // true if subject is mandatory
 }
