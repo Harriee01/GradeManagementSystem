@@ -1,4 +1,7 @@
 package com.grademanagement.collections;
 
-public class ThreaSafeList {
+
+public class ThreadSafeList {
+
+
 }
