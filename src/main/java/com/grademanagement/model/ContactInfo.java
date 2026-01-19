@@ -13,6 +13,8 @@ public class ContactInfo {
         this.address = address;
     }
 
+
+
     public void setEmail(String email) {
         // Comprehensive email regex pattern
         Pattern emailPattern = Pattern.compile(
@@ -46,5 +48,8 @@ public class ContactInfo {
 
     public String getAddress() {
         return address;
+    }
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
